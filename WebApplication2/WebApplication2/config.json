@@ -1,0 +1,51 @@
+{
+  "1Task": {
+    "companies": [
+      {
+        "title": "Microsoft",
+        "country": "USA",
+        "numOfEmployees": "600000",
+        "products": [
+          {
+            "name": "Visual Studio",
+            "numOfusers": "2000000"
+          },
+          {
+            "name": "Skype",
+            "numOfusers": "1500000"
+          }
+        ]
+      },
+      {
+        "title": "Apple",
+        "country": "USA",
+        "numOfEmployees": "300000",
+        "products": [
+          {
+            "name": "IPhone",
+            "numOfusers": "20000000"
+          },
+          {
+            "name": "IPad",
+            "numOfusers": "12345678"
+          }
+        ]
+      },
+      {
+        "title": "Google",
+        "country": "USA",
+        "numOfEmployees": "400000",
+        "products": [
+          {
+            "name": "Google Chrome",
+            "numOfusers": "95123450"
+          },
+          {
+            "name": "Pixel",
+            "numOfusers": "200000"
+          }
+        ]
+      }
+    ]
+  }
+}

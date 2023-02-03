@@ -1,0 +1,49 @@
+﻿@page
+@model WebApplication9.Pages.IndexModel
+@{
+
+}
+
+<div class="text-center">
+    <div class="display-4">
+        <h2>@Model.Message</h2>
+    </div>
+    @if (Request.Method == "POST")
+    {
+        <h3>Отримані дані</h3>
+        
+        @foreach (var product in Model.Components)
+        {
+            <div class="form-group">
+                <label>Id</label> @product.Id
+            </div>
+            <div class="form-group">
+                <label>Name</label> @product.Name
+            </div>
+            <div class="form-group">
+                <label>Price</label> @product.Price
+            </div>
+            <hr></hr>
+        }
+    }
+    <form method="post" style="margin:auto; width:50%">
+        @for (var i = 0; i < @Model.Count; i++)
+        {
+            <div class="form-group">
+                <label>Id</label>
+                <input type="number" name="[@i].Id" />
+            </div>
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" name="[@i].Name" />
+            </div>
+            <div class="form-group">
+                <label>Price</label>
+                <input type="number" name="[@i].Price" />
+            </div>
+            <hr></hr>
+        }
+        <br />
+        <button type="submit">Add</button>
+    </form>
+</div>

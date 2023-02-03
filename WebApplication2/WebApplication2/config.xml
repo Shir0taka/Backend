@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<companies>
+		<element>
+			<country>USA</country>
+			<numOfEmployees>600000</numOfEmployees>
+			<products>
+				<element>
+					<name>Visual Studio</name>
+					<numOfusers>2000000</numOfusers>
+				</element>
+				<element>
+					<name>Skype</name>
+					<numOfusers>1500000</numOfusers>
+				</element>
+			</products>
+			<title>Microsoft</title>
+		</element>
+		<element>
+			<country>USA</country>
+			<numOfEmployees>300000</numOfEmployees>
+			<products>
+				<element>
+					<name>IPhone</name>
+					<numOfusers>20000000</numOfusers>
+				</element>
+				<element>
+					<name>IPad</name>
+					<numOfusers>12345678</numOfusers>
+				</element>
+			</products>
+			<title>Apple</title>
+		</element>
+		<element>
+			<country>USA</country>
+			<numOfEmployees>400000</numOfEmployees>
+			<products>
+				<element>
+					<name>Google Chrome</name>
+					<numOfusers>95123450</numOfusers>
+				</element>
+				<element>
+					<name>Pixel</name>
+					<numOfusers>200000</numOfusers>
+				</element>
+			</products>
+			<title>Google</title>
+		</element>
+	</companies>
+</root>

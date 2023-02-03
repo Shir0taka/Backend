@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <form method="post" style="margin:auto; width:50%" asp-antiforgery="false">
+        <table id="products">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Employees</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var product in @Model)
+                {
+                    <tr>
+                        <th>@product.Id</th>
+                        <td>@product.Name</td>
+                        <td>@product.Description</td>
+                        <td>@product.Employees</td>
+                    </tr>
+                }
+                
+                <tr>
+                    <td>@*<input type="number" name="Id" value="" />*@</td>
+                    <td><input type="text" name="Name" value="" /></td>
+                    <td><input type="text" name="Description" value="" /></td>
+                    <td><input type="number" name="Employees" value="" /></td>
+                </tr>
+            </tbody>
+        </table>
+        <br />
+        <input type="submit" value="Send">
+    </form>
+</div>
