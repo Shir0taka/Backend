@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Compose your order</p>
+    
+    <form method="POST" action="Submit">
+        <div>
+            <span>Soba</span> <input type="number" name="soba" min="0" max="10">
+            <p></p>
+            <span>Takoyaki</span> <input type="number" name="takoyaki" min="0" max="10">
+            <p></p>
+            <span>Tonkotsu</span> <input type="number" name="tonkotsu" min="0" max="10">
+            <p></p>
+            <span>Nabe</span> <input type="number" name="nabe" min="0" max="10">
+
+        </div>
+        <div>
+            <input type="submit" value="Submit" />
+        </div>
+    </form>
+
+</div>
